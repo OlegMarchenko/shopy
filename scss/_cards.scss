@@ -1,0 +1,53 @@
+.card {
+  background-color: #fff;
+}
+.card-product {}
+.card-header {}
+.card-header img {}
+.card-body {}
+.card-title {}
+.card-price {}
+.card-hover {}
+.card-list-sizes {}
+.card-colors {}
+.card-footer {}
+
+//card product
+
+.card-product {
+  .card-header img {
+    width: 100%;
+    height: auto;
+  }
+  .card-body {
+    .card-title {
+      font-size: 18px;
+      color: #34404b;
+    }
+    .card-price {
+      font-size: 18px;
+      color: #ff5912;
+    }
+  }
+  .card-hover {
+    .card-header img {
+
+    }
+    .card-body {
+      .card-title {
+
+      }
+      .card-list-sizes {
+
+      }
+      .card-colors {
+
+      }
+    }
+    .card-footer {
+      .card-list-options {
+
+      }
+    }
+  }
+}

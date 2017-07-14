@@ -1,0 +1,15 @@
+.section {
+  padding: 120px 0;
+}
+.section-heading {
+  .heading-title {
+    font: 36px/1 'Harmonia Sans Pro Cyr';
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #ff5912;
+    span {
+      color: #34404b;
+    }
+  }
+}

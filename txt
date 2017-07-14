@@ -1,0 +1,13 @@
+mail
+phone
+facebook
+twitter
+google
+instagram
+search
+user
+cart
+share
+add to cart
+like
+
