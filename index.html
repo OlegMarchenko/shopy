@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>shopy</title>
     <link rel="stylesheet" href="scss/normalize.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="scss/main.css">
 </head>
 <body>
@@ -13,14 +16,14 @@
             <div class="header-top">
                 <div class="list-contacts">
                     <ul>
-                        <li><a href="mailto:info@shopy.com"><i class="icon-mail-icon"></i>info@shopy.com</a></li>
-                        <li><a href="tel:996 - 5553 - 453"><i class="icon-phone-icon"></i>996 - 5553 - 453</a></li>
+                        <li><a href="mailto:info@shopy.com"><i class="icon-mail-icon"></i><span>info@shopy.com</span></a></li>
+                        <li><a href="tel:996-5553-453"><i class="icon-phone-icon"></i><span>996 - 5553 - 453</span></a></li>
                     </ul>
                 </div>
                 <div class="list-socials">
                     <ul>
-                        <li><a href="#" class="icon-facebook-icon"></a></li>
-                        <li><a href="#" class="icon-twitter-icon"></a></li>
+                        <li><a href="#" class="icon-facebook"></a></li>
+                        <li><a href="#" class="icon-twitter"></a></li>
                         <li><a href="#" class="icon-google-icon"></a></li>
                         <li><a href="#" class="icon-instagram-icon"></a></li>
                         <li><a href="#" class="navbar-toggler"></a></li>
@@ -30,17 +33,94 @@
             <div class="header-body">
                 <div class="header-left">
                     <div class="logo">
-                        <img src="images/Logo.png" alt="logo">
+                        <a href="#"><img src="images/Logo.png" alt="logo"></a>
+                    </div>
+                    <div class="navbar-nar">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Hot Deals</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="header-right">
-                    <div class="navbar-nar"></div>
+                    <div class="list-options">
+                        <ul>
+                            <li><a href="#" class="icon-search-icon"></a></li>
+                            <li><a href="#" class="icon-user-icon"></a></li>
+                            <li><a href="#" class="icon-cart-icon"><span>5</span></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    <div class="main-section-holder">
+        <div class="container holder-dots">
+            <div class="appendDots"></div>
+        </div>
+        <div class="main-section">
+            <div class="sl-slide">
+                <div class="container">
+                    <div class="main-description">
+
+                        <div class="title">FULL WINTER KIT</div>
+                        <div class="description">
+                            <div class="goods">Half Jacket + Skiny Trousers + Boot leather</div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                        </div>
+                        <div class="list-prise">
+                            <ul>
+                                <li>$120 : Price</li>
+                                <li><a href="#"><i class="icon-cart-icon"></i>Order Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sl-slide">
+                <div class="container">
+                    <div class="main-description">
+
+                        <div class="title">FULL WINTER KIT</div>
+                        <div class="description">
+                            <div class="goods">Half Jacket + Skiny Trousers + Boot leather</div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                        </div>
+                        <div class="list-prise">
+                            <ul>
+                                <li>$120 : Price</li>
+                                <li><a href="#"><i class="icon-cart-icon"></i>Order Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sl-slide">
+                <div class="container">
+                    <div class="main-description">
+
+                        <div class="title">FULL WINTER KIT</div>
+                        <div class="description">
+                            <div class="goods">Half Jacket + Skiny Trousers + Boot leather</div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+                        </div>
+                        <div class="list-prise">
+                            <ul>
+                                <li>$120 : Price</li>
+                                <li><a href="#"><i class="icon-cart-icon"></i>Order Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="js/jquery-3.2.1.min.js"></script>
+<script src="slick/slick.min.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>

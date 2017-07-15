@@ -3,3 +3,213 @@
 @import 'section';
 @import 'cards';
 @import 'navbar';
+
+
+//styles header-top
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #e6e8eb;
+}
+.header {
+  background-color: #fff;
+}
+.list-contacts {
+  li {
+    padding-right: 19px;
+    transition: .2s all;
+  }
+  i {
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  a {
+    font-size: 12px;
+    transition: .2s all;
+  }
+}
+.icon-google-icon {
+  font-size: 17px;
+}
+.list-socials {
+  margin-right: -8px;
+
+  a {
+    padding: 0 8px;
+    transition: .2s all;
+  }
+}
+
+//end styles header-top
+
+//styles header-body
+
+.header-body {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header-left {
+  display: flex;
+  line-height: 1;
+  align-items: center;
+  .logo {
+    margin-right: 83px;
+  }
+}
+.navbar-nar {
+  ul {
+    margin: 0 -20px;
+  }
+  li {
+    padding: 0 20px;
+  }
+}
+.list-options {
+  li {
+    padding: 0 16px;
+    margin-right: -4px;
+    vertical-align: middle;
+  }
+  a {
+    color:  #34404b;
+  }
+  .icon-cart-icon {
+    color: #ff5912;
+  }
+  span {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    content: '';
+    line-height: 18px;
+    text-align: center;
+    background-color: #34404b;
+    top: -20px;
+    right: 3px;
+    color: #fff;
+    border-radius: 50%;
+    font-family: 'Harmonia Sans Pro Cyr';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+  }
+}
+.icon-search-icon {
+  font-size: 19px;
+}
+.icon-user-icon {
+  font-size: 21px;
+}
+.icon-cart-icon {
+  font-size: 17px;
+  position: relative;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+//styles for slick-slider
+
+.sl-slide {
+  background: url("../images/bg-slider.jpg") center right no-repeat;
+  background-size: cover;
+
+}
+.main-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 649px;
+  padding-left: 95px;
+  .title {
+    font-family: "Harmonia Sans Pro Cyr";
+    font-size: 52px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ff5912;
+  }
+  .description {
+    padding: 1px 0 55px;
+    .goods {
+      font-family: 'Harmonia Sans Pro Cyr Semi Bd';
+      font-size: 18px;
+      color: #3c4751;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+//styles slick-slider
+
+:focus {
+  outline: none;
+}
+
+
+.appendDots {
+  position: absolute;
+  top: 0;
+  height: 651px;
+}
+.sl-slide {
+  .container {
+    position: relative;
+  }
+}
+.holder-dots {
+  z-index: 111111;
+  position: relative;
+}
+.slick-dots {
+  position: absolute;
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  li {
+    width: 10px;
+    height: 36px;
+  }
+}
+
+.slick-dots li button:before {
+  content: '';
+  width: 10px;
+  height: 18px;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.slick-dots .slick-active button:before {
+  width: 10px;
+  height: 36px;
+  content: '';
+  background-color: #ff5912;
+  opacity: 1;
+}
+.slick-dots li {
+  height: 18px;
+  margin: 5px 0;
+}
+.slick-dots .slick-active {
+  height: 36px;
+}
