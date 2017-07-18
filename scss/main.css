@@ -169,13 +169,15 @@ li {
   height: auto; }
 .card-product .card-body {
   text-align: center; }
-  .card-product .card-body .card-price {
-    font-size: 18px;
-    color: #ff5912;
-    font-weight: bold; }
-.card-product .card-title {
+
+.card-title {
   font-size: 18px;
   color: #34404b;
+  font-weight: bold; }
+
+.card-price {
+  font-size: 18px;
+  color: #ff5912;
   font-weight: bold; }
 
 .navbar-toggler {
@@ -467,7 +469,9 @@ li {
 
 .offers-holder {
   padding: 33px 60px;
-  background-color: #fff; }
+  background-color: #fff;
+  display: flex;
+  margin: 0 -15px; }
 
 .card-sale {
   width: 72px;
@@ -513,9 +517,124 @@ li {
   bottom: 0;
   right: 0;
   left: 0;
-  opacity: .5;
+  opacity: .6;
   transform: rotate(45deg);
   background-color: #ff5912;
   z-index: -1; }
+
+.offers {
+  display: flex;
+  margin: 0 -15px; }
+
+.offers-holder,
+.adv-area {
+  border: 1px solid #eceff1;
+  margin: 0 15px; }
+
+.sale-title {
+  padding-right: 37px;
+  border-right: 1px solid #f5f5f6; }
+  .sale-title .title {
+    font-size: 22px;
+    font-weight: 900;
+    color: #34404b; }
+  .sale-title .description {
+    font-size: 12px; }
+
+.area {
+  display: flex;
+  padding-left: 65px;
+  align-items: center; }
+
+.buy {
+  padding-left: 37px;
+  margin: 0 -10px; }
+  .buy li {
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #ff5912; }
+    .buy li span {
+      font-size: 22px; }
+  .buy i {
+    font-size: 20px;
+    color: #ff5912; }
+
+.adv-area {
+  background-color: #fff;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .adv-area .title {
+    color: #34404b; }
+  .adv-area span {
+    color: #ff5912; }
+  .adv-area .description {
+    color: #34404b;
+    opacity: .4;
+    white-space: pre;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding-top: 3px; }
+
+.section-best-sales {
+  padding-top: 0; }
+
+.card-sales-holder {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px; }
+
+.card-sales {
+  width: 33.33%;
+  background-color: #fff;
+  padding: 35px 30px 35px 28px;
+  margin: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  transition: .2s all; }
+  .card-sales .card-title {
+    padding-bottom: 20px; }
+  .card-sales .card-price {
+    font-size: 16px;
+    transition: .2s; }
+  .card-sales img {
+    transition: .2s; }
+
+.stars-price {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -8px;
+  position: relative;
+  transition: .2s; }
+  .stars-price a {
+    opacity: 0;
+    position: absolute;
+    transition: .2s; }
+  .stars-price i {
+    font-size: 20px; }
+  .stars-price span {
+    padding-left: 9px;
+    font-family: "Harmonia Sans Pro Cyr Semi Bd";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px; }
+
+.card-sales:hover .stars-price a {
+  opacity: 1; }
+
+.card-sales:hover .stars-price img,
+.card-sales:hover .stars-price .card-price {
+  opacity: 0; }
+
+.card-sales:hover .stars-price {
+  justify-content: center; }
+
+.card-sales:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=main.css.map */

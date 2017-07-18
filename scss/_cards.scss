@@ -19,17 +19,9 @@
   }
   .card-body {
     text-align: center;
-    .card-price {
-      font-size: 18px;
-      color: #ff5912;
-      font-weight: bold;
-    }
+
   }
-  .card-title {
-    font-size: 18px;
-    color: #34404b;
-    font-weight: bold;
-  }
+
   .card-hover {
     .card-header img {
 
@@ -51,4 +43,14 @@
       }
     }
   }
+}
+.card-title {
+  font-size: 18px;
+  color: #34404b;
+  font-weight: bold;
+}
+.card-price {
+  font-size: 18px;
+  color: #ff5912;
+  font-weight: bold;
 }
