@@ -1,6 +1,4 @@
-.card {
-  background-color: #fff;
-}
+
 .card-product {}
 .card-header {}
 .card-header img {}
@@ -20,14 +18,17 @@
     height: auto;
   }
   .card-body {
-    .card-title {
-      font-size: 18px;
-      color: #34404b;
-    }
+    text-align: center;
     .card-price {
       font-size: 18px;
       color: #ff5912;
+      font-weight: bold;
     }
+  }
+  .card-title {
+    font-size: 18px;
+    color: #34404b;
+    font-weight: bold;
   }
   .card-hover {
     .card-header img {
@@ -40,7 +41,7 @@
       .card-list-sizes {
 
       }
-      .card-colors {
+      .card-list-colors {
 
       }
     }

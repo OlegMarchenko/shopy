@@ -161,27 +161,22 @@ li {
 .section {
   padding: 120px 0; }
 
-.section-heading .heading-title {
-  font: 36px/1 'Harmonia Sans Pro Cyr';
-  font-weight: 900;
-  font-style: normal;
-  text-transform: uppercase;
-  color: #ff5912; }
-  .section-heading .heading-title span {
-    color: #34404b; }
-
-.card {
-  background-color: #fff; }
+.section-title {
+  font-size: 36px; }
 
 .card-product .card-header img {
   max-width: 100%;
   height: auto; }
-.card-product .card-body .card-title {
+.card-product .card-body {
+  text-align: center; }
+  .card-product .card-body .card-price {
+    font-size: 18px;
+    color: #ff5912;
+    font-weight: bold; }
+.card-product .card-title {
   font-size: 18px;
-  color: #34404b; }
-.card-product .card-body .card-price {
-  font-size: 18px;
-  color: #ff5912; }
+  color: #34404b;
+  font-weight: bold; }
 
 .navbar-toggler {
   display: none; }
@@ -242,6 +237,8 @@ li {
   vertical-align: middle; }
 .list-options a {
   color: #34404b; }
+.list-options i {
+  font-size: 20px; }
 .list-options .icon-cart-icon {
   color: #ff5912; }
 .list-options span {
@@ -351,5 +348,174 @@ li {
 
 .slick-dots .slick-active {
   height: 36px; }
+
+.list-price {
+  font-size: 18px;
+  color: #34404b; }
+  .list-price li:last-child {
+    padding-left: 31px; }
+    .list-price li:last-child a {
+      color: #ff5912; }
+  .list-price i {
+    padding-right: 9px; }
+
+.section-heading {
+  text-align: center;
+  padding-bottom: 77px; }
+
+.section-title {
+  color: #ff5912;
+  font-size: 36px;
+  font-family: "Harmonia Sans Pro Cyr";
+  font-weight: 900;
+  padding-bottom: 9px; }
+  .section-title span {
+    color: #34404b; }
+
+.list-colors a {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%; }
+.list-colors .red {
+  background-color: #ea454f; }
+.list-colors .black {
+  background-color: #41515d; }
+.list-colors .blue {
+  background-color: #42c2ff; }
+.list-colors .green {
+  background-color: #2cdd7b; }
+
+.card-product {
+  width: 25%;
+  margin: 0 15px;
+  background-color: #fff;
+  padding: 30px;
+  position: relative; }
+
+.card-products {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px; }
+
+.card-header {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px; }
+
+.card-product:hover .card-hover {
+  opacity: 1; }
+
+.card-hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  transition: .2s;
+  padding: 35px 50px 30px 50px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
+  .card-hover .card-header {
+    height: 90px;
+    padding: 0;
+    margin-bottom: 20px; }
+  .card-hover .card-title {
+    color: #ff5912;
+    padding-bottom: 20px; }
+  .card-hover .card-list-sizes {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #34404b;
+    padding-bottom: 20px; }
+    .card-hover .card-list-sizes ul {
+      padding-left: 10px; }
+  .card-hover .ws {
+    white-space: pre; }
+  .card-hover .card-body {
+    padding-bottom: 14px; }
+
+.card-list-colors {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #f2f4f7; }
+
+.card-list-options i {
+  font-size: 18px;
+  color: #34404b; }
+.card-list-options .icon-add-to-cart-icon {
+  color: #ff5912; }
+
+.card-products {
+  margin-bottom: 80px; }
+
+.dots {
+  padding: 16px 0;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 119px; }
+  .dots li {
+    margin: 0 1px; }
+  .dots a {
+    width: 8px;
+    height: 8px;
+    background-color: #ff5912;
+    border-radius: 50%; }
+
+.offers-holder {
+  padding: 33px 60px;
+  background-color: #fff; }
+
+.card-sale {
+  width: 72px;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  z-index: 2; }
+  .card-sale span {
+    font-size: 21px;
+    font-weight: 900;
+    font-style: normal;
+    display: block;
+    color: #fff;
+    line-height: 1.2; }
+
+.sale {
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+  display: flex;
+  line-height: 1.2; }
+
+.card-sale::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: rotate(-45deg);
+  background-color: #ff5912;
+  z-index: -1; }
+
+.card-sale::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: .5;
+  transform: rotate(45deg);
+  background-color: #ff5912;
+  z-index: -1; }
 
 /*# sourceMappingURL=main.css.map */
