@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Harmonia Sans Pro Cyr Semi Bd';
   src: url("../fonts/HarmoniaSansProCyr-SemiBd.woff2") format("woff2"), url("../fonts/HarmoniaSansProCyr-SemiBd.woff") format("woff"), url("../fonts/HarmoniaSansProCyr-SemiBd.svg#HarmoniaSansProCyr-SemiBd") format("svg");
@@ -585,7 +586,8 @@ li {
 .card-sales-holder {
   display: flex;
   justify-content: space-between;
-  margin: 0 -15px; }
+  margin: 0 -15px;
+  padding-bottom: 120px; }
 
 .card-sales {
   width: 33.33%;
@@ -636,5 +638,95 @@ li {
 
 .card-sales:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
+
+.news-letter {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  padding: 36px 42px 36px 55px;
+  justify-content: space-between; }
+
+.right-block {
+  display: flex; }
+  .right-block .title {
+    font-weight: bold;
+    color: #ff5912;
+    font-size: 18px;
+    padding-right: 23px; }
+  .right-block .description {
+    font-style: italic;
+    font-size: 14px;
+    color: #34404b; }
+
+.left-block input[type="button"] {
+  font-family: "Harmonia Sans Pro Cyr Semi Bd";
+  font-size: 14px;
+  color: #fff;
+  padding: 18px 29px;
+  background-color: #ff5912;
+  border: none;
+  cursor: pointer;
+  margin-left: 75px; }
+.left-block .mail {
+  display: inline-flex;
+  position: relative; }
+  .left-block .mail::before {
+    position: absolute;
+    content: '\e902';
+    font-family: 'icomoon';
+    top: 14px;
+    left: 12px;
+    color: #ff5912;
+    cursor: pointer;
+    font-size: 11px; }
+.left-block input[type="email"] {
+  padding: 12px 20px 12px 40px;
+  font-style: italic;
+  border: none;
+  color: #555; }
+
+footer {
+  background-color: #fff;
+  padding: 88px 0 81px 0;
+  font-size: 14px;
+  color: #28313b; }
+  footer li {
+    display: block;
+    position: relative; }
+    footer li::before {
+      padding-right: 8px;
+      content: "• ";
+      color: #41515d;
+      position: absolute; }
+    footer li a {
+      padding-left: 10px; }
+  footer .active a {
+    color: #ff5912; }
+  footer .active::before {
+    padding-right: 8px;
+    content: "• ";
+    color: #ff5912;
+    position: absolute; }
+
+.footer-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.footer-lists {
+  display: flex;
+  justify-content: space-between;
+  align-self: center; }
+  .footer-lists ul {
+    padding: 0 70px; }
+
+.payment .title {
+  font-family: 'Harmonia Sans Pro Cyr Semi Bd';
+  color: #ff5912;
+  padding-bottom: 15px;
+  font-size: 16px; }
+
+.copyright .logo {
+  padding-bottom: 15px; }
 
 /*# sourceMappingURL=main.css.map */

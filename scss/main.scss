@@ -507,6 +507,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 -15px;
+  padding-bottom: 120px;
 }
 
 .card-sales {
@@ -568,3 +569,124 @@
 .card-sales:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
+//styles for news-letter
+
+.news-letter {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  padding: 36px 42px 36px 55px;
+  justify-content: space-between;
+}
+
+.right-block {
+  display: flex;
+  .title {
+    font-weight: bold;
+    color: $brand-color;
+    font-size: 18px;
+    padding-right: 23px;
+  }
+  .description {
+    font-style: italic;
+    font-size: 14px;
+    color: #34404b;
+  }
+}
+
+.left-block {
+  input[type="button"] {
+    font-family: "Harmonia Sans Pro Cyr Semi Bd";
+    font-size: 14px;
+    color: #fff;
+    padding: 18px 29px;
+    background-color: $brand-color;
+    border: none;
+    cursor: pointer;
+    margin-left: 75px;
+  }
+  .mail {
+    display: inline-flex;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '\e902';
+      font-family: 'icomoon';
+      top: 14px;
+      left: 12px;
+      color: $brand-color;
+      cursor: pointer;
+      font-size: 11px;
+
+    }
+  }
+  input[type="email"] {
+    padding: 12px 20px 12px 40px;
+    font-style: italic;
+    border: none;
+    color: #555;
+  }
+}
+
+//footer styles
+
+footer {
+  background-color: #fff;
+  padding: 88px 0 81px 0;
+  font-size: 14px;
+  color: #28313b;
+  li {
+    display: block;
+    position: relative;
+    &::before {
+      padding-right: 8px;
+      content: "• ";
+      color: #41515d;
+      position: absolute;
+    }
+    a {
+      padding-left: 10px;
+    }
+  }
+  .active a {
+    color: $brand-color;
+  }
+  .active::before {
+    padding-right: 8px;
+    content: "• ";
+    color: $brand-color;
+    position: absolute;
+  }
+}
+.footer-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-lists {
+  display: flex;
+  justify-content: space-between;
+  align-self:center;
+  ul {
+    padding: 0 70px;
+  }
+}
+
+.payment {
+  .title {
+    font-family: 'Harmonia Sans Pro Cyr Semi Bd';
+    color: $brand-color;
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+}
+.copyright {
+  .logo {
+    padding-bottom: 15px;
+  }
+}
+
+//products
+
+
