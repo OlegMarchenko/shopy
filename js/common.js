@@ -24,4 +24,12 @@ $(document).ready(function() {
     });
 
     $('.range-slider').jRange('updateRange', '0,1100', '100,1000');
+
+    $(".navbar-toggler").click(function(){
+        $(".navbar-nav").slideToggle(function(){
+            if($(this).css('display') === 'none'){
+                $(this).removeAttr('style');
+            }
+        });
+    })
 });
