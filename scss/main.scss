@@ -276,7 +276,7 @@
   width: 25%;
   margin: 0 15px;
   background-color: #fff;
-  padding: 30px;
+  padding: 37px 30px;
   position: relative;
 }
 
@@ -332,11 +332,11 @@
     white-space: pre;
   }
   .card-body {
-    padding-bottom: 14px;
+    padding-bottom: 25px;
   }
 }
 .card-list-colors {
-  padding-bottom: 22px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #f2f4f7;
 }
 .card-list-options {
@@ -694,6 +694,8 @@ footer {
   width: 100%;
   padding: 0 15px;
   margin-left: -15px;
+  display: inline-block;
+  margin-right: -4px;
 }
 
 .categories,
@@ -764,4 +766,106 @@ input[type=checkbox] + label:before{
 input[type=checkbox]:checked + label:before{
   border: 4px solid $brand-color;
   background-color: #fff;
+}
+
+//styles for select-bar
+
+.theme-green .back-bar .selected-bar {
+  background-image: linear-gradient(to bottom, #43525d, #43525d);
+}
+
+.theme-green .back-bar .pointer {
+  border: 1px solid #43525d;
+  background-color: #43525d;
+  background-image: linear-gradient(to bottom, #43525d, #43525d);
+}
+
+.slider-container .back-bar .pointer-label {
+  font-size: 15px;
+  padding-right: 8px;
+  margin-left: -2px;
+  top: -28px;
+  &::before {
+    position: absolute;
+    content: '$';
+    top: 0;
+    right: 0;
+  }
+}
+
+.theme-green .back-bar {
+  background-image: linear-gradient(to bottom, #f1f3f5, #f1f3f5);
+  border-radius: 0;
+  cursor: pointer;
+  .pointer-label {
+    color: #43525d;
+  }
+}
+
+.theme-green .scale {
+  opacity: 0;
+}
+
+.slider-container .back-bar .pointer {
+  cursor: pointer;
+}
+
+.price-filter {
+  legend {
+    padding-bottom: 60px;
+  }
+}
+
+.rs {
+  padding-bottom: 37px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  width: 45px;
+  border: none;
+  background-color: #f1f3f5;
+  padding: 5px 5px;
+  margin-bottom: 2px;
+}
+
+.value-filter {
+  display: inline-flex;
+  label {
+    font-family: 'Harmonia Sans Pro Cyr Semi Bd';
+    font-size: 14px;
+    color: #34404b;
+    padding-right: 15px;
+  }
+}
+label[for="to"] {
+  padding-left: 10px;
+}
+
+//products gallery
+
+.products-gallery {
+  display: inline-block;
+  max-width: 900px;
+  width: 100%;
+  margin-right: -15px;
+  vertical-align: top;
+  .card-product {
+    display: inline-block;
+    width: 33.33%;
+    margin-bottom: 30px;
+  }
+  .card-products {
+    margin: 0;
+  }
+  .holder-dots {
+    padding: 0 15px;
+  }
+}
+
+.section-sidebar {
+  padding-bottom: 0;
 }
