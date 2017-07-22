@@ -949,5 +949,90 @@ label[for="to"] {
 
   .list-socials {
     margin-right: 50px; } }
+.section-slider {
+  background-color: #fff; }
+
+.slide-product {
+  max-width: 485px;
+  width: 100%;
+  justify-content: center; }
+
+.holder-slider {
+  display: flex; }
+
+.card-specification {
+  width: 100%; }
+  .card-specification .title {
+    font-family: "Harmonia Sans Pro Cyr";
+    font-size: 52px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ff5912; }
+  .card-specification .goods {
+    font-family: 'Harmonia Sans Pro Cyr Semi Bd';
+    font-size: 18px;
+    color: #3c4751; }
+  .card-specification .main {
+    margin-bottom: 40px; }
+  .card-specification p {
+    max-width: 518px;
+    margin-bottom: 0; }
+    .card-specification p:last-child {
+      max-width: 350px;
+      margin-top: 0; }
+
+.choose-holder {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #edeff1;
+  border-bottom: 1px solid #edeff1; }
+
+.choose-size {
+  display: flex;
+  font-family: 'Harmonia Sans Pro Cyr Semi Bd';
+  font-size: 18px;
+  color: #34404b; }
+  .choose-size .list-sizes {
+    padding-left: 21px; }
+    .choose-size .list-sizes a {
+      font-size: 14px; }
+    .choose-size .list-sizes .active {
+      font-size: 18px;
+      color: #ff5912; }
+
+.choose-quantity label {
+  font-family: 'Harmonia Sans Pro Cyr Semi Bd';
+  font-size: 18px;
+  color: #34404b;
+  padding-right: 21px; }
+.choose-quantity input[type="number"] {
+  width: 42px;
+  padding: 5px 16px;
+  background-color: #fff; }
+.choose-quantity ::-webkit-input-placeholder {
+  color: #ff5912; }
+
+.price-buttons-holder {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between; }
+  .price-buttons-holder .list-price li {
+    padding-left: 0;
+    font-size: 20px;
+    color: #34404b;
+    font-weight: 900; }
+
+.social-btn-holder {
+  display: flex; }
+  .social-btn-holder .list-options li {
+    padding: 0 14px; }
+  .social-btn-holder .card-list-options {
+    padding-right: 25px; }
+  .social-btn-holder .btn a {
+    color: #fff;
+    background-color: #ff5912;
+    padding: 15px 24px;
+    border-radius: 24px; }
 
 /*# sourceMappingURL=main.css.map */
