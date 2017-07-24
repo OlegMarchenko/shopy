@@ -37,6 +37,7 @@ $(document).ready(function () {
             verticalSwiping: true,
             infinite: false,
             mobileFirst: true,
+            touchMove: false,
             appendDots: '.appendDots'
         });
     }
