@@ -858,9 +858,6 @@ label[for="to"] {
     display: flex;
     flex-wrap: wrap;
   }
-  .holder-dots {
-    padding: 0 15px;
-  }
 }
 
 .section-sidebar {
@@ -893,9 +890,6 @@ label[for="to"] {
     .footer-lists {
       width: 100%;
       margin-bottom: 15px;
-      ul {
-        padding: 0 15px;
-      }
     }
     .copyright {
       align-self: flex-start;
@@ -1017,19 +1011,23 @@ label[for="to"] {
 }
 
 .choose-quantity {
-  label {
-    font-family: 'Harmonia Sans Pro Cyr Semi Bd';
-    font-size: 18px;
-    color: #34404b;
-    padding-right: 21px;
-  }
+  display: flex;
+  font-family: 'Harmonia Sans Pro Cyr Semi Bd';
+  font-size: 18px;
+  color: #34404b;
   input[type="number"] {
     width: 42px;
-    padding: 5px 16px;
+    padding: 5px 8px;
     background-color: #fff;
-  }
-  ::-webkit-input-placeholder {
     color: $brand-color;
+    text-align: center;
+  }
+  .max,
+  .min {
+    cursor: pointer;
+  }
+  form {
+    padding-left: 21px;
   }
 }
 .price-buttons-holder {
@@ -1086,8 +1084,8 @@ label[for="to"] {
   margin: 0 8px;
 }
 
-.slide-product {
-  .active {
+.slide-product .bottom-slider-init {
+  .slick-current.slick-active {
     position: relative;
     &::before {
       position: absolute;
@@ -1097,11 +1095,13 @@ label[for="to"] {
       right: 0;
       left: 0;
       background-color: $brand-color;
-      opacity: .7;
+      opacity: .9;
     }
   }
 }
-
+.slick-slide img {
+  position: relative;
+}
 
 
 //responsive on 480px
@@ -1295,7 +1295,121 @@ label[for="to"] {
   .products-gallery .card-product {
     width: 50%;
   }
+  .section-sidebar {
+    padding-bottom: 0;
+  }
+  .dots {
+    margin-bottom: 0;
+  }
 }
+
+@media screen and (max-width: 320px){
+  .products-gallery .card-product{
+    width:100%;
+  }
+  .sidebar {
+    font-size: 13px;
+  }
+  .categories h2, .categories legend, .price-filter h2, .price-filter legend, .sizes h2, .sizes legend, .brands h2, .brands legend {
+    padding-bottom: 15px;
+  }
+  .select-holder {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .rs {
+      padding: 20px 0;
+    }
+  }
+
+  .checkboxes-holder {
+    flex-wrap: wrap;
+    .sz {
+      width: 50%;
+    }
+  }
+
+  .footer-lists {
+    flex-wrap: wrap;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 10px 3px 10px 3px;
+    }
+  }
+
+  .footer-holder .copyright {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .payment {
+    width: 100%;
+    text-align: center;
+  }
+  .news-letter .left-block form {
+    text-align: center;
+  }
+}
+
+//responsive for hotdeals
+
+@media screen and (max-width: 768px){
+  .holder-slider {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .slide-product {
+    max-width: none;
+    margin-top: 50px;
+  }
+
+  .bottom-slider-init {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .choose-size,
+  .choose-quantity{
+    width: 100%;
+  }
+
+  .choose-holder {
+    padding: 15px 0;
+    flex-wrap: wrap;
+    .list-sizes {
+      padding-left: 43px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-lists {
+    flex-wrap: wrap;
+  }
+  .footer-holder .footer-lists ul {
+    width: 50%;
+    padding: 0 25px;
+    margin-bottom: 10px;
+  }
+  .payment {
+    padding: 0 25px;
+  }
+  .price-buttons-holder {
+    flex-wrap: wrap;
+  }
+
+  .social-btn-holder {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    .card-list-options {
+      margin-top: 30px;
+    }
+  }
+}
+
 
 
 

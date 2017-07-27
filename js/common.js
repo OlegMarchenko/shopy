@@ -52,10 +52,29 @@ $(document).ready(function () {
             slidesToShow: 3,
             slidesToScroll: 1,
             focusOnSelect: true,
-            asNavFor: '.top-slider-init',
-            autoplay:true
+            asNavFor: '.top-slider-init'
+            // autoplay:true
         });
     }
 
+    if ($('.min').length) {
+        $('.min').click(function () {
+            var $input = $(this).parent().find('input');
+            var count = parseInt($input.val()) - 1;
+            count = count < 1 ? 1 : count;
+            $input.val(count);
+            $input.change();
+            return false;
+        });
+    }
+
+    if ($('.max').length) {
+        $('.max').click(function () {
+            var $input = $(this).parent().find('input');
+            $input.val(parseInt($input.val()) + 1);
+            $input.change();
+            return false;
+        });
+    }
 
 });

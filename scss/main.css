@@ -864,8 +864,6 @@ label[for="to"] {
   margin: 0 -15px;
   display: flex;
   flex-wrap: wrap; }
-.products-gallery .holder-dots {
-  padding: 0 15px; }
 
 .section-sidebar {
   padding-bottom: 0; }
@@ -895,8 +893,6 @@ label[for="to"] {
     .footer-holder .footer-lists {
       width: 100%;
       margin-bottom: 15px; }
-      .footer-holder .footer-lists ul {
-        padding: 0 15px; }
     .footer-holder .copyright {
       align-self: flex-start; }
 
@@ -993,17 +989,22 @@ label[for="to"] {
       font-size: 18px;
       color: #ff5912; }
 
-.choose-quantity label {
+.choose-quantity {
+  display: flex;
   font-family: 'Harmonia Sans Pro Cyr Semi Bd';
   font-size: 18px;
-  color: #34404b;
-  padding-right: 21px; }
-.choose-quantity input[type="number"] {
-  width: 42px;
-  padding: 5px 16px;
-  background-color: #fff; }
-.choose-quantity ::-webkit-input-placeholder {
-  color: #ff5912; }
+  color: #34404b; }
+  .choose-quantity input[type="number"] {
+    width: 42px;
+    padding: 5px 8px;
+    background-color: #fff;
+    color: #ff5912;
+    text-align: center; }
+  .choose-quantity .max,
+  .choose-quantity .min {
+    cursor: pointer; }
+  .choose-quantity form {
+    padding-left: 21px; }
 
 .price-buttons-holder {
   display: flex;
@@ -1046,9 +1047,9 @@ label[for="to"] {
   padding: 7px 10px;
   margin: 0 8px; }
 
-.slide-product .active {
+.slide-product .bottom-slider-init .slick-current.slick-active {
   position: relative; }
-  .slide-product .active::before {
+  .slide-product .bottom-slider-init .slick-current.slick-active::before {
     position: absolute;
     content: '';
     top: 0;
@@ -1056,7 +1057,10 @@ label[for="to"] {
     right: 0;
     left: 0;
     background-color: #ff5912;
-    opacity: .7; }
+    opacity: .9; }
+
+.slick-slide img {
+  position: relative; }
 
 @media screen and (max-width: 992px) {
   .card-poduct {
@@ -1214,6 +1218,93 @@ label[for="to"] {
     justify-content: space-around; }
 
   .products-gallery .card-product {
-    width: 50%; } }
+    width: 50%; }
+
+  .section-sidebar {
+    padding-bottom: 0; }
+
+  .dots {
+    margin-bottom: 0; } }
+@media screen and (max-width: 320px) {
+  .products-gallery .card-product {
+    width: 100%; }
+
+  .sidebar {
+    font-size: 13px; }
+
+  .categories h2, .categories legend, .price-filter h2, .price-filter legend, .sizes h2, .sizes legend, .brands h2, .brands legend {
+    padding-bottom: 15px; }
+
+  .select-holder {
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .select-holder .rs {
+      padding: 20px 0; }
+
+  .checkboxes-holder {
+    flex-wrap: wrap; }
+    .checkboxes-holder .sz {
+      width: 50%; }
+
+  .footer-lists {
+    flex-wrap: wrap; }
+    .footer-lists ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 10px 3px 10px 3px; }
+
+  .footer-holder .copyright {
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  .payment {
+    width: 100%;
+    text-align: center; }
+
+  .news-letter .left-block form {
+    text-align: center; } }
+@media screen and (max-width: 768px) {
+  .holder-slider {
+    flex-wrap: wrap;
+    flex-direction: column-reverse; }
+
+  .slide-product {
+    max-width: none;
+    margin-top: 50px; }
+
+  .bottom-slider-init {
+    max-width: 320px;
+    margin: 0 auto; } }
+@media screen and (max-width: 768px) {
+  .choose-size,
+  .choose-quantity {
+    width: 100%; }
+
+  .choose-holder {
+    padding: 15px 0;
+    flex-wrap: wrap; }
+    .choose-holder .list-sizes {
+      padding-left: 43px; } }
+@media screen and (max-width: 768px) {
+  .footer-lists {
+    flex-wrap: wrap; }
+
+  .footer-holder .footer-lists ul {
+    width: 50%;
+    padding: 0 25px;
+    margin-bottom: 10px; }
+
+  .payment {
+    padding: 0 25px; }
+
+  .price-buttons-holder {
+    flex-wrap: wrap; }
+
+  .social-btn-holder {
+    flex-wrap: wrap;
+    flex-direction: column-reverse; }
+    .social-btn-holder .card-list-options {
+      margin-top: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
