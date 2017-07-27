@@ -1,15 +1,4 @@
 
-.card-product {}
-.card-header {}
-.card-header img {}
-.card-body {}
-.card-title {}
-.card-price {}
-.card-hover {}
-.card-list-sizes {}
-.card-colors {}
-.card-footer {}
-
 //card product
 
 .card-product {
@@ -52,6 +41,6 @@
 }
 .card-price {
   font-size: 18px;
-  color: #ff5912;
+  color: $brand-color;
   font-weight: bold;
 }
